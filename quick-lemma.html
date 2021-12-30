@@ -1,39 +1,69 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <title>Homepaige</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <div class='container content' style='display: none'>
-      <div class='row'>
-        <div class='col-md-12'>
-          <div id="header"></div>
+        <div class='row'>
+            <div class='col-md-12'>
+                <div id="header"></div>
+            </div>
         </div>
-      </div>
-      <div class='row'>
-        <div class='col-md-6'>
-            <h3>Quick Lemma</h3>
+        <div class='row'>
+            <div class='col-md-4'>
+                <h3>Quick Lemma</h3>
+                <p>
+                    Quick Lemma is a tool in the <i>Visualizing Russian</i> suite that presents frequency data about
+                    different sets of words. Users can input their own sets of words (like days of the week, colors,
+                    different prepositions, synonyms) to compare their relative frequencies in current corpora and over
+                    time. There is also an option to view all morphological variations on a word. Russian is a
+                    morphologically rich language, which means that the language encodes a lot of information in 
+                    different word forms. I developed this tool from start to finish.
+                </p>
+                <p>
+                    You can try the live tool on the 
+                    <a href='https://visualizingrussian.fas.harvard.edu/quick-lemma' target='_blank'>Visualizing Russian website</a>
+                </p>
+            </div>
+            <div class='col-md-8'>
+                <div>
+                    <img src='images/quick-lemma-demo.png' style='max-width:100%; max-height:100%;'>
+                    <p>
+                        This screenshot shows a comparison of Monday, Tuesday, Wednesday, Thursday, Friday, 
+                        Saturday, Sunday in Russian. The most frequent word is Wednesday, <i>sreda</i> (среда),
+                        which makes sense, because <i>sreda</i> actually has a meaning other than the day of the
+                        week. <i>Sreda</i> also means environment or medium, so the word itself has a higher frequency
+                        than other words. The graph on the right also shows that Sunday, or <i>vosrekresene</i> (воскресенье), 
+                        has a generally higher frequency than the other days of the week. This can be attributed to
+                        <i>voskresene</i>'s true meaning, which is"resurrection."
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class='col-md-6'>
-
+        <div class='row'>
+            <div class='col-md-12'>
+                <div id="footer"></div>
+            </div>
         </div>
-      </div>
-      <div class='row'>
-        <div class='col-md-12'>
-          <div id="footer"></div>
-        </div>
-      </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
 
 <script src='scripts.js'></script>

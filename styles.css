@@ -1,5 +1,5 @@
 a {
-    color: royalblue
+    color: #4169e1
 }
 #titlename {
     text-decoration: none;
@@ -8,8 +8,13 @@ a {
 /* card */
 .card {
     box-shadow: 5px 5px 6px #8888887c;
+    transition: 0.3s;
 }
-.card {}
+.card:hover {
+    box-shadow: none;
+    transition: 0.3s;
+}
+
 /* footer */
 footer {
     bottom: 0;
