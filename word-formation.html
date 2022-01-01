@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Homepaige</title>
+  </head>
+
+  <body>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-12'>
+          <div id="header"></div>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-md-4'>
+            <h3>Word Formation</h3>
+            <p>
+                The name for the Word Formation tool in Russian is <i>slovoobrazovanie</i>
+                (словообразование), literally meaning "word formation" or "word derivation".
+                Like the name suggests, the tool presents information related to word roots,
+                showing users the common derivation of different families of words. Learning
+                the meaning or association of different word roots can be very helpful to Russian
+                language learners because in Russian the 228 most common roots produce upwards of 
+                20,000 words, an average of 90 words per root
+                (<a href='https://slavica.indiana.edu/bookListings/textbooks/Leveraging_Russian'>source</a>).
+            </p>
+            <p>
+                The tool also offers information on word frequency, helping language learners 
+                understand which words may be more or less applicable in their language studies,
+                and part of speech, aiding learners in the ability to recognize different parts of
+                speech in Russian.
+            </p>
+            <p>
+                The live tool can be found on the 
+                <a href='https://visualizingrussian-dev.fas.harvard.edu/word-formation'>Visualizing Russian website</a>.
+            </p>
+        </div>
+        <div class='col-md-8'>
+          <p>
+              <b>Below:</b> Demo of the Word Formation tool on the root <i>moch</i> (моч) which refers to 
+              the meaning "to be able." Note that a word circle's distance from the center of 
+              the cloud indicates its frequency. More frequent words are closer to the center, 
+              less frequent words are farther away. See the legend in the dashboard for the 
+              leveling based on the database: 
+          </p>
+          <img class='demos' src='images/wf-dash.png'>
+          <img class='demos border' src='images/normal-cloud.png' style='margin-bottom: 15px'>
+          <p><b>Below:</b> Information tooltip displayed on hovering over the word circle for <i>vozmozhnost'</i> (возможность):</p>
+          <img class='demos border' src='images/hover-cloud.png' style='margin-bottom: 15px'>
+          <p><b>Below:</b> Part of speech legend and demo of coloring the word circles by part of speech:</p>
+          <img class='demos' src='images/pos-dash.png'>
+          <img class='demos' src='images/pos-cloud.png'>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+<script src='scripts.js'></script>

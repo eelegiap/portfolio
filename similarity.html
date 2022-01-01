@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Homepaige</title>
+</head>
+
+<body>
+    <div class='container content' style='display: none'>
+        <div class='row'>
+            <div class='col-md-12'>
+                <div id="header"></div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-md-4'>
+                <h3>Similarity Tool</h3>
+                <p>
+                    Users can input any word into the Similarity Tool in <i>Visualizing Russian</i> 
+                    to generate lists and graphs of similar words. Similarity is determined by 
+                    the word embedding vectors (embedding vectors are numerical vector representations of words,
+                    usually created by parsing huge amounts of text and analyzing words in their sentence context).
+                    The distance between vectors can be computed using different distance metrics, and I
+                    used cosine similarity here.
+                </p>
+                <p>
+                    The tool gives two options for generating similar words. The first is 
+                    <a href='https://en.wikipedia.org/wiki/Locality-sensitive_hashing'>LSH (Locality Sensitive Hashing)</a>,
+                    which is an algorithmic technique that hashes similar input items into the same "buckets" with high probability.
+                    It is a type of "near-neighbor" search, which finds approximate near neighbors of vectors, so it is not always 
+                    100% correct. However, it is fast! Most LSH queries for the Similarity Tool take less than one second.
+                </p>
+                <p>
+                    The other option for generating similar words is the brute force method which simply loops over 
+                    all of the words in the dictionary and compares the target word with each search word. Because there are 
+                    thousands and thousands of words in the dictionary, this takes longer, usually more than ten seconds
+                    for the Similarity Tool. However, it is 100% accurate based on the data and will always return the 
+                    same list of similar words, so this can be helpful for experimental purposes. 
+                </p>
+                <p>
+                    The Similarity Tool can be helpful for language learners who want to learn related words 
+                    in the vocabulary. For example, a search on the word "football" will return other 
+                    sports terms, like different games and sports (hockey, basketball, golf, chess), words pertinent to the 
+                    game of football/soccer (match, box, stadium), and words associated with sports in general 
+                    (sport, games, to play, championship).
+                    This tool is also potentially of interest to 
+                    researchers looking at contextual word usage and synonyms in Russian.
+                </p>
+                <p>
+                    You can try the live tool on the 
+                    <a href='https://visualizingrussian.fas.harvard.edu/similarity' target='_blank'>Visualizing Russian website</a>.
+                </p>
+            </div>
+            <div class='col-md-8'>
+                <div>
+                    <p>
+                        Demo of the Similarity Tool on the word "university" (<i>universitet</i>/университет).
+                        The ranked list of similar word (forms) is on the left. On the right a graph 
+                        of similar word vectors. The 300-dimension vectors are squished down to 2-dimensions
+                        using <a href='https://en.wikipedia.org/wiki/Principal_component_analysis'>principal component analysis</a>.
+                    </p>
+                    <img class='demos' src='images/sim-page.png' style='margin-bottom: 15px'>
+                    <p>
+                        <b>Below:</b> Panning a rectangular on the graph allows a user to zoom in on a certain section of the graph.
+                        In this area, we see several of the words similar to university, such as academia,
+                        education, apply, graduated, student, college, etc.
+                        The two dots off to the right say Cambridge and Oxford.
+                    </p>
+                    <img class='demos' src='images/sim-graph.png' style='margin-bottom: 15px'>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<script src='scripts.js'></script>

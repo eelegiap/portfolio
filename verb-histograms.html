@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Verb Histograms</title>
+</head>
+
+<body>
+    <div class='container content' style='display: none'>
+        <div class='row'>
+            <div class='col-md-12'>
+                <div id="header"></div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-md-4'>
+                <h3>Verb Histograms</h3>
+                <p>
+                    Verb Histograms is a tool in the <i>Visualizing Russian</i> suite that 
+                    visualizes the relative frequencies of different constructions associated 
+                    with different verbs. The idea of constructions comes from 
+                    <a href='https://en.wikipedia.org/wiki/Construction_grammar'>Construction Grammar</a>,
+                    which posits that <i>constructions</i>, or learned pairings of linguistic patterns with meanings,
+                    are the fundamental building blocks of human language. Prepositions play a big role 
+                    in Russian verb constructions. For example the verb "to play", or <i>igrat'</i> (играть),
+                    is often used with two prepositions: <i>na</i> (на) and <i>v'</i> (в), which both mean 
+                    something similar to "in" or "on." However, the choice of preposition one uses with
+                    <i>igrat'</i> essentially determines its meaning. <i>Na</i> indicates a playing a 
+                    musical instrument, while <i>v'</i> indicates playing a sport.
+                    For example: You can say <i>igrat' na (piano)</i> and <i>igrat' v' (soccer)</i>, 
+                    but you can't say <i>igrat' na (soccer)</i> or <i>igrat' v (piano)</i>. 
+                </p>
+                <p>
+                    The Verb Histogram Tool shows which prepositions, cases, and expressions are used 
+                    most frequently with certain verbs. Clicking on the bar graph itself shows 
+                    the real examples from the corpus which comprise the statistics shown in the graph.
+                </p>
+                <p>
+                    Of course, Russian is a complex language, and many, many, different constructions 
+                    can be found surrounding the same verb, but it is helpful to know which constructions 
+                    are most common to a certain verb, or what words frequently occur with a certain verb.
+                </p>
+                <p>
+                    You can try the live tool on the 
+                    <a href='https://visualizingrussian.fas.harvard.edu/verb-histograms' target='_blank'>Visualizing Russian website</a>
+                </p>
+            </div>
+            <div class='col-md-8'>
+                <div>
+                    <p>
+                        Demo of the Verb Histogram Tool on the verb "to think", or <i>dumat'</i> (думать).
+                        The top part of the tool is a dashboard showing the most common constructions across 
+                        all instances of the verb found in the corpus. For "to think," the most common 
+                        collection of constructions were "думать + [ о/об + LOC ]" (to think about something)
+                        and "думать + [ , что ]" (to think that...). A list of frequently co-occurring words 
+                        is also shown, helping users understand the phrasal context of the verb.
+                    </p>
+                    <img class='demos' src='images/vh-dash.png' style='margin-bottom: 15px'>
+                    <p>
+                        <b>Below:</b> Graph of the different constructions of "to think." The common constructions
+                        pointed out in the dash are reinforced in the graph, along with a multitude of other
+                        possible constructions. The horizontal axis refers to the place in the sentence where 
+                        the particular construction begins (3 words before the verb, 2 words before the verb, etc.):
+                    </p>
+                    <img class='demos' src='images/vh-dumat.png' style='margin-bottom: 15px'>
+                    <p>
+                        <b>Below:</b> Users can hover over the legend to look at the breakdown for a particular construction.
+                        Clicking on "NOM" shows that the nominative case shows up in the -1 and +1 positions 
+                        around the verb, but about 4 times more frequently before (in this corpus):
+                    </p>
+                    <img class='demos' src='images/vh-nom.png' style='margin-bottom: 15px'>
+                    <p>
+                        <b>Below:</b> It is also possible to view the examples comprising the statistics shown 
+                        on the graph. For example, here we see all of the sentences from the corpus where ", что" (that) that occur 
+                        in the +1 position of the verb "to think".
+                    </p>
+                    <img class='demos' src='images/vh-shto.png' style='margin-bottom: 15px'>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<script src='scripts.js'></script>

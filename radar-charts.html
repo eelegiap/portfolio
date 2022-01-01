@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Homepaige</title>
+</head>
+
+<body>
+    <div class='container content' style='display: none'>
+        <div class='row'>
+            <div class='col-md-12'>
+                <div id="header"></div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-md-4'>
+                <h3>Radar Charts</h3>
+                <p>
+                    In my research, I have been experimenting with building 
+                    <a href='https://www.d3-graph-gallery.com/spider'>radar charts</a>, also called spider charts or web charts,
+                    to present linguistic information. These are a two-dimensional chart type designed 
+                    to plot one or more series of values over multiple quantitative variables. 
+                    Each variable has its own axis, all axes are joined in the center of the figure.
+                    These types of charts are sometimes criticized for being difficult or misleading
+                    to interpret because of its circular layout, often random category ordering, and
+                    portrayal of point information as area. However, I have found that they are an 
+                    effective graph for showing linguistic information that is based on 
+                    relative frequency of categorical information. 
+                </p>
+                <p>
+                    I have experimented with building radar charts for showing the distribution of the 
+                    6 Russian cases (nominative, accusative, locative, instrumental, dative, genitive)
+                    across nouns in the abridged Russian National Corpus, a large collection of real
+                    Russian texts. The charts show how often a word will occur in different cases.
+                    For example, the word <i>karandash</i> (карандаш), pencil, should intuitively 
+                    occur most frequently in the instrumental case <i>karandashom</i> (карандашом), meaning 
+                    "with a pencil."
+                    I have also built radar charts summarizing the frequency of different verb forms for 
+                    some verb infinitive. Of course, different verb forms do not all occur in equal 
+                    frequency across the intersections of feminine, masculine, and neuter and past, present, and future.
+                </p>
+                <p>
+                    Understanding the case breakdown or verb form distribution of words can 
+                    help language learners master the most critical word forms. This is more 
+                    critical to Russian than English, for example, because Russian encodes 
+                    so much information in word form, and subsequently, there is a great abundance 
+                    of forms for every word. For example, some verbs boast upwards of 60 forms for one infinitive! 
+                    For example, 40+ forms of the verb <i>begat'</i> (бегать), meaning "to run", can be found
+                    <a href='http://masterrussian.com/verbs/begat_pobezhat.htm'>here</a>.
+                </p>
+                <p>
+                    You can try the live Case Distribution tool on the 
+                    <a href='https://visualizingrussian.fas.harvard.edu/case-distribution' target='_blank'>Visualizing Russian website</a>
+                    or my prototype of the Verb Distribution tool <a href='https://eelegiap.github.io/verbradarcharts/'>here</a>.
+                </p>
+            </div>
+            <div class='col-md-8'>
+                <div>
+                    <p>
+                        Demo of the <b>case distribution tool</b> on <i>list</i> (лист) meaning "leaf" in 
+                        Russian. The dots indicate the frequency with which the singular or plural 
+                        form of the word occurs in each case category. The graph shows that the word
+                        <i>list</i> more frequently shows up in plural than singular, and especially 
+                        in the instrumental case (with leaves) and the genitive case (of leaves):
+                    </p>
+                    <img class='demos' src='images/case-dist.png' style='margin-bottom: 15px'>
+                    <p><b>Below:</b> Count from the abridged Russian National Corpus shown on hover:</p>
+                    <img class='demos' src='images/hover-case-dist.png' style='margin-bottom: 15px'>
+                    <p>
+                        <b>Below:</b> Demo of the <b>verb distribution tool</b> on the verb <i>chitat'</i>
+                        (читать), meaning "to read." The graph shows both the imperfective and 
+                        perfective forms of the verb. (Roughly, imperfective is used when the 
+                        action is incomplete, while perfective is used when the action is complete.)
+                        The aspect gauge in the bottom left shows that "to read" more frequently occurs in the 
+                        imperfective aspect than the perfective aspect, implying that people more often 
+                        refer to the "process" of reading rather than the "completion" of reading. 
+                    </p>
+                    <img class='demos' src='images/verb-radar.png' style='margin-bottom: 15px'>
+                    <p>
+                        <b>Below:</b> Chart showing the verb form breakdown in more detail. In the texts
+                        in the corpus, the verb seems to show up most frequently in its imperfective infinitive form ("to read")
+                        and imperfective past masculine form ("he read"). In the present tense, <i>chitat'</i> is most frequently 
+                        found in its first person singular ("I read") and third person singular ("we read") forms.
+                    </p>
+                    <img class='demos' src='images/detailed-verb-radar.png' style='margin-bottom: 15px'>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<script src='scripts.js'></script>

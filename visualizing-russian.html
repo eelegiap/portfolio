@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Homepaige</title>
+</head>
+
+<body>
+    <div class='container content' style='display: none'>
+        <div class='row'>
+            <div class='col-md-12'>
+                <div id="header"></div>
+            </div>
+        </div>
+        <div class='row' style='padding-bottom: 120px'>
+            <div class='col-md-6'>
+                <h3>Visualizing Russian</h3>
+                <p>
+                    Visualizing Russian 
+                    (<a href='https://visualizingrussian.fas.harvard.edu'>https://visualizingrussian.fas.harvard.edu</a>)
+                    is a suite of tools benefiting
+                    language learners, teachers, and researchers and enabling each user-group to access the
+                    complex system of the Russian language through visualization methods in order to leverage
+                    the powers of compression and expansion of a massive dataset. Tools developed so far
+                    analyze texts for relative difficulty with regard to vocabulary content, create frequency lists
+                    and display word forms used for each lemma in a text, compare target vocabulary to coverage
+                    in a text, identify the most commonly used word forms for a lemma, compare the relative
+                    frequency of near-synonyms or other items in a semantic domain, show the usage of nouns
+                    with various cases or verbs with various person/number/tense/aspect combinations, and
+                    identify the case governance or preposition usage of Russian verbs. Additional tools break
+                    down word-formation for prefixes-roots-suffixes in words and identify the field of
+                    morphologically-related or semantically-related words for any target word. These tools have
+                    contributed to the creation of a new Russian textbook series, Foundations of Russian (Clancy,
+                    Egorova, Green, Willis, forthcoming from Routledge Publishers), which presents a 4000-word
+                    vocabulary based on the most frequently occurring and communicatively necessary words in
+                    Russian.
+                    (from the <i>Visualizing Russian</i> website)
+                </p>
+                <p>I have supported this project by helping to brainstorm, design, prototype,
+                    and implement various data-based tools for Russian language learning. Some of
+                    the tools featured on the site are <a>Quick Lemma</a>, <a>Word Formation</a>,
+                    <a>Similarity Tool</a>, <a>Verb Histograms, </a>and the <a>radar charts</a>.
+                </p>
+                <p>
+                    You can try any of the live tools on the 
+                    <a href='https://visualizingrussian.fas.harvard.edu/' target='_blank'>Visualizing Russian website</a>
+                </p>
+            </div>
+            <div class='col-md-6'>
+                <div>
+                    <img class='demos' src='images/ak-parsed.png'>
+                    <p style='padding-top: 20px'>
+                        Example of the text parsing tool on the first few paragraphs of Anna Karenina.
+                        Words are colored by level, and users can click on any word to see extended 
+                        grammatical information on the right hand side. Here, the parser shows that the
+                        word <i>smeshalos'</i> or смешалось is a perfective verb that occurs in the neuter past form.
+                        The verb <i>smeshat'sa</i> (here meaning "to become mixed up/confused") is shown to have 
+                        a 30-70 split of the imperfective vs. perfective forms based on frequency data in our database.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<script src='scripts.js'></script>
