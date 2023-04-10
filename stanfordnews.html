@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Homepaige</title>
+</head>
+
+<body>
+    <div class='container content' style='display: none'>
+        <div class='row'>
+            <div class='col-md-12'>
+                <div id="header"></div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-md-4'>
+                <h3>Comparing Western News and Russian Propaganda</h3>
+                <p>
+                    In general, which features of language distinguish propaganda from independent news?, and
+                    specifically, How can temporal, linguistic, and emotional features inform us on these differences?
+                    Answering these questions will provide a greater understanding of how to detect propaganda and
+                    understand its linguistic strategies of persuasion, a pressing issue as the online information war
+                    becomes a greater threat around the world.
+                </p>
+                <p>
+                    I use 3 types of computational analysis to investigate my research questions. These are thematic,
+                    which I conduct with topic modeling; stylistic, using Linguistic Inquiry and Word Counts (LIWC), and
+                    a mixed-level analysis
+                    using sentiment analysis and the results from my topic modeling. Together, these 3 levels of
+                    analysis reveal different features and patterns for textual analysis.
+                </p>
+            </div>
+            <div class='col-md-8'>
+                <div>
+                    <img class='demos' src='images/narrativeLines.png'>
+                    <p>
+                        On inspecting topic frequency over time, we find that the drop in frequency for
+                        "Military Tension" in Russian outlets is balanced out by increases in "Dialogue of Diplomacy"
+                        and "Denial of Accusations," and these topics stayed the same or decreased in Western outlets
+                        during the same time period. On qualitative inspection, this suggests that as Western
+                        governments gave more attention to Russia's military buildup, the Russian government downplayed
+                        the military crisis during this time period by resorting to rhetoric of deflection and
+                        deescalation.
+                    </p>
+                    <p>This project involved BERT topic modeling and visualizing topics over time.</p>
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-md-12'>
+                <img class='demos' src='images/bertTopic.png'>
+                <img class='demos' src='images/bertExamples.png'>
+                <img class='demos' src='images/topTopics.png'>
+            </div>
+
+        </div>
+
+        <div id="footer"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<script src='scripts.js'></script>
