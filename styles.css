@@ -16,12 +16,15 @@ a {
 .card {
     box-shadow: 5px 5px 6px #8888887c;
     transition: 0.3s;
+    cursor: pointer
 }
 .card:hover {
     box-shadow: none;
     transition: 0.3s;
 }
-
+.card-link:hover{
+    text-decoration: underline;
+}
 /* footer */
 footer {
     left: 0;
@@ -31,4 +34,10 @@ footer {
 }
 .date {
     color: gray
+}
+.bordered-box {
+    border: 1px solid #000000; /* Thin 1px border with black color */
+    border-radius: 5px; /* Slightly rounded corners with a 5px radius */
+    margin: 10px;
+    padding: 5px
 }
