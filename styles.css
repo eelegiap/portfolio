@@ -13,15 +13,15 @@ a {
     border: black
 }
 /* card */
-.card {
-    box-shadow: 5px 5px 6px #8888887c;
-    transition: 0.3s;
-    cursor: pointer
-}
-.card:hover {
+/* .card { */
+    /* box-shadow: 5px 5px 6px #8888887c; */
+    /* transition: 0.3s; */
+    /* cursor: pointer */
+/* } */
+/* .card:hover {
     box-shadow: none;
-    transition: 0.3s;
-}
+    transition: 0.3s; */
+/* } */
 .card-link:hover{
     text-decoration: underline;
 }
