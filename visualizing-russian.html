@@ -17,64 +17,211 @@
                 <div id="header"></div>
             </div>
         </div>
-        <div class='row' style='padding-bottom: 120px'>
+        <div class='row'>
             <div class='col-md-6'>
                 <h3>Visualizing Russian</h3>
+                <p>I have supported the Visualizing Russian project by helping to brainstorm, design, prototype,
+                    and implement various data-based web tools for Russian language learning in D3.js, Javascript, HTML,
+                    and CSS.
+                    For many of the tools, I designed novel visualizations based on language data.
+                    Some of the tools featured on the site are <a>Quick Lemma</a>, <a>Word Formation</a>,
+                    <a>Similarity Tool</a>, <a>Verb Histograms, </a>and the <a>Case Radar Charts</a>.
+                </p>
+
+                <p style="font-size: small;">From the <i>Visualizing Russian</i> website:</p>
                 <p>
-                    Visualizing Russian 
-                    (<a href='https://visualizingrussian.fas.harvard.edu'>https://visualizingrussian.fas.harvard.edu</a>)
+                    Visualizing Russian
+                    (<a
+                        href='https://visualizingrussian.fas.harvard.edu'>https://visualizingrussian.fas.harvard.edu</a>)
                     is a suite of tools benefiting
                     language learners, teachers, and researchers and enabling each user-group to access the
                     complex system of the Russian language through visualization methods in order to leverage
-                    the powers of compression and expansion of a massive dataset. Tools developed so far
+                    the powers of compression and expansion of a massive dataset.
+                <p>Tools developed so far
                     analyze texts for relative difficulty with regard to vocabulary content, create frequency lists
                     and display word forms used for each lemma in a text, compare target vocabulary to coverage
                     in a text, identify the most commonly used word forms for a lemma, compare the relative
                     frequency of near-synonyms or other items in a semantic domain, show the usage of nouns
                     with various cases or verbs with various person/number/tense/aspect combinations, and
-                    identify the case governance or preposition usage of Russian verbs. Additional tools break
+                    identify the case governance or preposition usage of Russian verbs. </p>
+
+                <p>Additional tools break
                     down word-formation for prefixes-roots-suffixes in words and identify the field of
                     morphologically-related or semantically-related words for any target word. These tools have
                     contributed to the creation of a new Russian textbook series, Foundations of Russian (Clancy,
                     Egorova, Green, Willis, forthcoming from Routledge Publishers), which presents a 4000-word
                     vocabulary based on the most frequently occurring and communicatively necessary words in
                     Russian.
-                    (from the <i>Visualizing Russian</i> website)
-                </p>
-                <p>I have supported this project by helping to brainstorm, design, prototype,
-                    and implement various data-based tools for Russian language learning. Some of
-                    the tools featured on the site are <a>Quick Lemma</a>, <a>Word Formation</a>,
-                    <a>Similarity Tool</a>, <a>Verb Histograms, </a>and the <a>radar charts</a>.
                 </p>
                 <p>
-                    You can try any of the live tools on the 
-                    <a href='https://visualizingrussian.fas.harvard.edu/' target='_blank'>Visualizing Russian website</a>
+                    You can try any of the live tools on the
+                    <a href='https://visualizingrussian.fas.harvard.edu/' target='_blank'>Visualizing Russian
+                        website</a>
                 </p>
             </div>
             <div class='col-md-6'>
                 <div>
                     <img class='demos' src='images/ak-parsed.png'>
                     <p style='padding-top: 20px'>
-                        Example of the text parsing tool on the first few paragraphs of Anna Karenina.
-                        Words are colored by level, and users can click on any word to see extended 
-                        grammatical information on the right hand side. Here, the parser shows that the
+                        <b>Above: </b>Example of the text parsing tool on the first few paragraphs of Anna Karenina.
+                        Words are colored by level, and users can click on any word to see extended
+                        grammatical information on the right hand side.
+                    </p>
+                    <p>Here, the parser shows that the
                         word <i>smeshalos'</i> or смешалось is a perfective verb that occurs in the neuter past form.
-                        The verb <i>smeshat'sa</i> (here meaning "to become mixed up/confused") is shown to have 
+                        The verb <i>smeshat'sa</i> (here meaning "to become mixed up/confused") is shown to have
                         a 30-70 split of the imperfective vs. perfective forms based on frequency data in our database.
                     </p>
                 </div>
             </div>
         </div>
-        <div id="footer"></div>
-    </div>
+        <div class='row' style='padding-bottom: 120px'>
+            <div class='col-md-12'>
+                <hr>
+                <h3><a href="/similarity.html">Similarity Mapper: Ranking Word Embeddings</a></h3>
+                <div class='row'>
+                    <div class='col-md-6'>
+                        <p>
+                            <b>Below:</b> Demo of the Similarity Tool on the word "university"
+                            (<i>universitet</i>/университет).
+                            The ranked list of similar word (forms) and a graph
+                            of similar word vectors. The 300-dimension vectors are squished down to 2-dimensions
+                            using <a href='https://en.wikipedia.org/wiki/Principal_component_analysis'>principal
+                                component analysis</a>.
+                        </p>
+                        <img class='demos' src='images/sim-page.png' style='margin-bottom: 15px'>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+                    </div>
+                    <div class='col-md-6'>
+                        <p>
+                            <b>Below:</b> Panning a rectangular on the graph allows a user to zoom in on a certain
+                            section of the graph.
+                            In this area, we see several of the words similar to university, such as academia,
+                            education, apply, graduated, student, college, etc.
+                            The two dots off to the right say Cambridge and Oxford.
+                        </p>
+                        <img class='demos' src='images/sim-graph.png' style='margin-bottom: 15px'>
+                    </div>
+                </div>
+                <hr>
+<h3><a href="/quick-lemma.html">Quick Lemma: Word Frequency Over Time</a></h3>
+                <p>
+                    Quick Lemma is a tool in the <i>Visualizing Russian</i> suite that presents frequency data about
+                    different sets of words.</p>
+                <p>This screenshot shows a comparison of Monday, Tuesday, Wednesday, Thursday, Friday,
+                    Saturday, Sunday in Russian. The most frequent word is Wednesday, <i>sreda</i> (среда),
+                    which makes sense, because <i>sreda</i> actually has a meaning other than the day of the
+                    week. <i>Sreda</i> also means environment or medium, so the word itself has a higher frequency
+                    than other words. The graph on the right also shows that Sunday, or <i>vosrekresene</i>
+                    (воскресенье),
+                    has a generally higher frequency than the other days of the week. This can be attributed to
+                    <i>voskresene</i>'s true meaning, which is"resurrection."
+                </p>
+                <img class='demos' src='images/quick-lemma-demo.png'>
+                <hr>
+                <h3><a href="/word-formation.html">Word Formation: For Learning Word Roots</a></h3>
+                <p>
+                    The name for the Word Formation tool in Russian is <i>slovoobrazovanie</i>
+                    (словообразование), literally meaning "word formation" or "word derivation".
+                    Like the name suggests, the tool presents information related to word roots,
+                    showing users the common derivation of different families of words. Learning
+                    the meaning or association of different word roots can be very helpful to Russian
+                    language learners because in Russian the 228 most common roots produce upwards of
+                    20,000 words, an average of 90 words per root
+                    (<a href='https://slavica.indiana.edu/bookListings/textbooks/Leveraging_Russian'>source</a>).
+                </p>
+                <div class='row'>
+                    <div class='col-md-6'>
+                        <p>
+                            <b>Below:</b> Demo of the Word Formation tool on the root <i>moch</i> (моч) which refers to
+                            the meaning "to be able." Note that a word circle's distance from the center of
+                            the cloud indicates its frequency. More frequent words are closer to the center,
+                            less frequent words are farther away. See the legend in the dashboard for the
+                            leveling based on the database:
+                        </p>
+                        <img class='demos' src='images/wf-dash.png'>
+                        <img class='demos border' src='images/normal-cloud.png' style='margin-bottom: 15px'>
+                    </div>
+                    <div class='col-md-6'>
+                        <p><b>Below:</b> Information tooltip displayed on hovering over the word circle for
+                            <i>vozmozhnost'</i> (возможность):
+                        </p>
+                        <img class='demos border' src='images/hover-cloud.png' style='margin-bottom: 15px'>
+                        <p><b>Below:</b> Part of speech legend and demo of coloring the word circles by part of speech:
+                        </p>
+                        <img class='demos' src='images/pos-dash.png'>
+                        <img class='demos' src='images/pos-cloud.png'>
+                    </div>
+                    <hr/>
+                    <h3><a href='/radar-charts.html'>Case Distribution Tool: Radar Charts</a></h3>
+                    <p>
+                        In my research, I have been experimenting with building
+                        <a href='https://www.d3-graph-gallery.com/spider'>radar charts</a>, also called spider charts or
+                        web charts,
+                        to present linguistic information. These are a two-dimensional chart type designed
+                        to plot one or more series of values over multiple quantitative variables.
+                        Each variable has its own axis, all axes are joined in the center of the figure.
+                        These types of charts are sometimes criticized for being difficult or misleading
+                        to interpret because of its circular layout, often random category ordering, and
+                        portrayal of point information as area. However, I have found that they are an
+                        effective graph for showing linguistic information that is based on
+                        relative frequency of categorical information.
+                    </p>
+                    <div class='row'>
+                        <div class='col-md-6'>
+                            <p>
+                                <b>Below:</b> Demo of the <b>verb distribution tool</b> on the verb <i>chitat'</i>
+                                (читать), meaning "to read." The graph shows both the imperfective and
+                                perfective forms of the verb. (Roughly, imperfective is used when the
+                                action is incomplete, while perfective is used when the action is complete.)
+                                The aspect gauge in the bottom left shows that "to read" more frequently occurs in the
+                                imperfective aspect than the perfective aspect, implying that people more often
+                                refer to the "process" of reading rather than the "completion" of reading.
+                            </p>
+                            <img class='demos' src='images/verb-radar.png' style='margin-bottom: 15px'>
+
+                        </div>
+                        <div class='col-md-6'>
+                            <p>
+                                <b>Below:</b> Chart showing the verb form breakdown in more detail. In the texts
+                                in the corpus, the verb seems to show up most frequently in its imperfective infinitive
+                                form ("to read")
+                                and imperfective past masculine form ("he read"). In the present tense, <i>chitat'</i>
+                                is most frequently
+                                found in its first person singular ("I read") and third person singular ("we read")
+                                forms.
+                            </p>
+                            <img class='demos' src='images/detailed-verb-radar.png' style='margin-bottom: 15px'>
+
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-md-6'>
+                            <p>
+                                Demo of the <b>case distribution tool</b> on <i>list</i> (лист) meaning "leaf" in
+                                Russian. The dots indicate the frequency with which the singular or plural
+                                form of the word occurs in each case category. The graph shows that the word
+                                <i>list</i> more frequently shows up in plural than singular, and especially
+                                in the instrumental case (with leaves) and the genitive case (of leaves):
+                            </p>
+                            <img class='demos' src='images/case-dist.png' style='margin-bottom: 15px'>
+                        </div>
+                        <div class='col-md-6'>
+                            <p><b>Below:</b> Count from the abridged Russian National Corpus shown on hover:</p>
+                            <img class='demos' src='images/hover-case-dist.png' style='margin-bottom: 15px'>
+
+                        </div>
+                    </div>
+                    <div id="footer"></div>
+                </div>
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                    crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                    crossorigin="anonymous"></script>
 </body>
 
 </html>
