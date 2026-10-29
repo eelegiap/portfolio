@@ -25,6 +25,14 @@ a {
 .card-link:hover{
     text-decoration: underline;
 }
+#homeright .card {
+    height: 100%;
+}
+#homeright .card-img-top {
+    height: 160px;
+    object-fit: cover;
+    width: 100%;
+}
 /* footer */
 footer {
     left: 0;
@@ -40,4 +48,17 @@ footer {
     border-radius: 5px; /* Slightly rounded corners with a 5px radius */
     margin: 10px;
     padding: 5px
+}
+.section-title {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid #222;
+    font-size: 1.6rem;
+}
+.pub-item {
+    margin-bottom: 1.25rem;
+}
+#publications {
+    margin-bottom: 0.5rem;
 }
